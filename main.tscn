@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbr3h60s3oc00"]
+
+[ext_resource type="Script" path="res://sub_viewport_container.gd" id="1_lyiqw"]
+[ext_resource type="Texture2D" uid="uid://bifs6lofiwle0" path="res://overlay.png" id="2_a7yyu"]
+[ext_resource type="Texture2D" uid="uid://cf1hvc7dg48tj" path="res://ShellOutShowdownTitlescreen.png" id="2_y4p6f"]
+
+[node name="TopLevelNode" type="Node"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 384.0
+offset_bottom = 216.0
+script = ExtResource("1_lyiqw")
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(384, 216)
+render_target_update_mode = 4
+
+[node name="AntiAliased" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+position = Vector2(192, 108)
+texture = ExtResource("2_y4p6f")
+
+[node name="Grid" type="Sprite2D" parent="SubViewportContainer/SubViewport/AntiAliased"]
+texture = ExtResource("2_a7yyu")
+
+[node name="NotAntiAliased" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(192, 108)
+texture = ExtResource("2_y4p6f")
+
+[node name="Grid" type="Sprite2D" parent="NotAntiAliased"]
+texture = ExtResource("2_a7yyu")
