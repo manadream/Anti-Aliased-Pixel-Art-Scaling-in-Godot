@@ -6,7 +6,7 @@ See [this Twitter post](https://x.com/TylerGlaiel/status/1580321295379546114) an
 
 ![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_example.gif?raw=true)
 ![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_closeup.gif?raw=true)
-![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_384x216_to_2560x1440.gif?raw=true)
+![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_384x216_to_960x540.gif?raw=true)
 
 
 ## How To Use
