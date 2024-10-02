@@ -1,8 +1,13 @@
 # Anti-Aliased Pixel Art Scaling in Godot
 
-This project demonstrates how to use the shader for arbitrary resolution pixel art scaling by @TylerGlaiel in Godot v4.3.
+This project demonstrates how to use the shader for arbitrary resolution pixel art scaling by [@TylerGlaiel](https://x.com/TylerGlaiel) in Godot v4.3.
 
 See [this Twitter post](https://x.com/TylerGlaiel/status/1580321295379546114) and [this shadertoy](https://www.shadertoy.com/view/csX3RH) for the original source of the shader by Tyler, and [this shadertoy](https://www.shadertoy.com/view/ltfXWS) for the shader that Tyler based it on. Thanks to them for this great pixel art scaling solution.
+
+![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_example.gif?raw=true)
+![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_closeup.gif?raw=true)
+![demo](https://github.com/manadream/Anti-Aliased-Pixel-Art-Scaling-in-Godot/blob/main/difference_384x216_to_2560x1440.gif?raw=true)
+
 
 ## How To Use
 
@@ -10,6 +15,7 @@ The intended usage of this setup in godot is to scale your project from whatever
 
 To use this in your project, do the following:
 
+- Copy `aa_pixel_art_scaler.gdshader` and `sub_viewport_container.gd` to your project
 - Under Project Settings > Display > Window:
   - Set `Viewport Width` and `Viewport Height` under `Size` to the width and height of your pixel art resolution size (384x216 is used in this example)
   - Set `Mode` under `Stretch` to `canvas_items`. DO NOT use `viewport` as this will bypass the scaling shader's functionality
